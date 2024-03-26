@@ -21,14 +21,12 @@ public class Dictionary implements Serializable {
         this.lishDictionary.put(key, value);
     }
     public void outputKeyInDictionary(){
-        System.out.printf("%30s%30s\n","English", "VietNamese");
         for (Map.Entry<String,String> entry:this.lishDictionary.entrySet()){
-            System.out.printf("%30s%30s\n",entry.getKey(), entry.getValue());
+            System.out.printf("%30s%30s",entry.getKey(), entry.getValue());
         }
     }
     public void findKeyOnDictionary(String key){
         if (this.lishDictionary.containsKey(key)){
-            System.out.printf("%30s%30s\n","English", "VietNamese");
             System.out.printf("%30s%30s\n",key, this.lishDictionary.get(key));
         }else {
             System.out.println("Khong ton tai!!");

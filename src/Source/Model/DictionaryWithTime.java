@@ -49,7 +49,6 @@ public class DictionaryWithTime implements Serializable {
         this.lisistMap.put(this.dictionary, this.localDateTime);
     }
     public void get(){
-        System.out.printf("%30s%30s%30s\n","English", "VietNamese", "Time add");
         for (Map.Entry<Dictionary, String> entry:this.lisistMap.entrySet()){
             entry.getKey().outputKeyInDictionary();
             System.out.printf("%30s\n", entry.getValue());

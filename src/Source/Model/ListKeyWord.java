@@ -19,14 +19,14 @@ public class ListKeyWord implements Serializable {
         System.out.println("Thanh cong");
     }
     public void getLishKeyWold(){
-        System.out.printf("%5s%30s%30s%30s\n", "STT", "English" , "VietNamese");
+        System.out.printf("%5s%30s%30s%30s\n", "STT", "English" , "VietNamese" ,"Time Add");
         for (Map.Entry<Integer,DictionaryWithTime> entry:this.ListKeyWorld.entrySet()){
             System.out.printf("%5d", entry.getKey());
             entry.getValue().get();
         }
     }
     public void findKeyWorld(int k){
-        System.out.printf("%5s%30s%30s%30s\n", "STT", "English" , "VietNamese");
+        System.out.printf("%5s%30s%30s%30s\n", "STT", "English" , "VietNamese" ,"Time Add");
         System.out.printf("%5d", k);
         this.ListKeyWorld.get(k).get();
     }

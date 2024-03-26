@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Dictionary implements Serializable {
-    Map<String, String> lishDictionary;
+    private Map<String, String> lishDictionary;
     public Dictionary(){
         lishDictionary = new HashMap<>();
     }

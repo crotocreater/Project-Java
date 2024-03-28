@@ -6,6 +6,15 @@ import java.util.Map;
 
 public class ListKeyWord implements Serializable {
     Map<Integer , DictionaryWithTime> ListKeyWorld;
+
+    public Map<Integer, DictionaryWithTime> getListKeyWorld() {
+        return ListKeyWorld;
+    }
+
+    public void setListKeyWorld(Map<Integer, DictionaryWithTime> listKeyWorld) {
+        ListKeyWorld = listKeyWorld;
+    }
+
     int tmp;
     public ListKeyWord(){
         ListKeyWorld = new HashMap<>();
